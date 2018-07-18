@@ -151,5 +151,22 @@ namespace WebApp.Controllers
             }
         }
 
+        protected override void OnException(ExceptionContext filterContext)
+        {
+            Exception exception = filterContext.Exception;
+            //Logging the Exception
+            filterContext.ExceptionHandled = true;
+
+            //Log error into db... I am making it as async called... As it returns void (fire and forget)
+            Action a = new Action(() => { Utility.ErrorSave._getInstance.Log(filterContext.Exception); });
+            System.Threading.Tasks.Task.Factory.StartNew(a);
+
+            var Result = this.View("Error", new HandleErrorInfo(exception,
+                filterContext.RouteData.Values["controller"].ToString(),
+                filterContext.RouteData.Values["action"].ToString()));
+
+            filterContext.Result = Result;
+
+        }
 	}
 }
