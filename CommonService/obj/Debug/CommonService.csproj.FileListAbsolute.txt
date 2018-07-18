@@ -1,0 +1,12 @@
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\CommonService.dll.config
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\CommonService.dll
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\CommonService.pdb
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\Data.dll
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\EntityFramework.dll
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\EntityFramework.SqlServer.dll
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\Data.pdb
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\EntityFramework.xml
+F:\Dev\MVC\WebApp\CommonService\bin\Debug\EntityFramework.SqlServer.xml
+F:\Dev\MVC\WebApp\CommonService\obj\Debug\CommonService.csprojResolveAssemblyReference.cache
+F:\Dev\MVC\WebApp\CommonService\obj\Debug\CommonService.dll
+F:\Dev\MVC\WebApp\CommonService\obj\Debug\CommonService.pdb

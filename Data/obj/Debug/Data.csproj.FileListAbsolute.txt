@@ -1,0 +1,10 @@
+F:\Dev\MVC\WebApp\Data\bin\Debug\Data.dll.config
+F:\Dev\MVC\WebApp\Data\bin\Debug\Data.dll
+F:\Dev\MVC\WebApp\Data\bin\Debug\Data.pdb
+F:\Dev\MVC\WebApp\Data\bin\Debug\EntityFramework.dll
+F:\Dev\MVC\WebApp\Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Dev\MVC\WebApp\Data\bin\Debug\EntityFramework.xml
+F:\Dev\MVC\WebApp\Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Dev\MVC\WebApp\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+F:\Dev\MVC\WebApp\Data\obj\Debug\Data.dll
+F:\Dev\MVC\WebApp\Data\obj\Debug\Data.pdb

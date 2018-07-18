@@ -1,0 +1,11 @@
+F:\Dev\MVC\WebApp\MyService\bin\Debug\MyService.dll
+F:\Dev\MVC\WebApp\MyService\bin\Debug\MyService.pdb
+F:\Dev\MVC\WebApp\MyService\bin\Debug\CommonService.dll
+F:\Dev\MVC\WebApp\MyService\bin\Debug\Data.dll
+F:\Dev\MVC\WebApp\MyService\bin\Debug\EntityFramework.dll
+F:\Dev\MVC\WebApp\MyService\bin\Debug\CommonService.pdb
+F:\Dev\MVC\WebApp\MyService\bin\Debug\Data.pdb
+F:\Dev\MVC\WebApp\MyService\bin\Debug\EntityFramework.xml
+F:\Dev\MVC\WebApp\MyService\obj\Debug\MyService.csprojResolveAssemblyReference.cache
+F:\Dev\MVC\WebApp\MyService\obj\Debug\MyService.dll
+F:\Dev\MVC\WebApp\MyService\obj\Debug\MyService.pdb

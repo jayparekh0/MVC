@@ -1,0 +1,59 @@
+﻿@model WebApp.Models.ContractModel
+
+@{
+    ViewBag.Title = "Contract Detail";
+}
+
+<div class="book-example panel panel-primary">
+    <div class="panel-heading panel-head">User Detail</div>
+    <div class="panel-body">
+        <div class="form-horizontal">
+            
+            <div class="form-group">
+                @Html.LabelFor(model => model.FirstName, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.FirstName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.LastName, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.LastName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.Email, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Phone, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.Phone, new { @class = "form-control" })
+                </div>
+            </div>
+            
+            <div class="form-group">
+                @Html.LabelFor(model => model.StatusDesc, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.StatusDesc, new { @class = "form-control" })
+                </div>
+            </div>
+
+            @using (Html.BeginForm())
+            {
+                <div class="form-group">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-9">
+                        @Html.ActionLink("Edit", "CreateEditContract", new { id = ViewContext.RouteData.Values["id"] }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-success" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+

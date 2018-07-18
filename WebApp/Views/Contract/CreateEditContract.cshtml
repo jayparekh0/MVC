@@ -1,0 +1,89 @@
+﻿@model WebApp.Models.ContractModel
+@{
+    ViewBag.Title = "Create Edit Contract";
+}
+<div class="book-example panel panel-primary">
+    <div class="panel-heading panel-head">Add / Edit Contract</div>
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            
+            <input type="hidden" name="ContID" value="@Model.ContractID" />
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstName, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.FirstName)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.LastName)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Phone, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Phone)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.StatusID, "StatusID", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.DropDownList("StatusID")
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.Email, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserName, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Address, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                    </div>
+                </div>*@
+                <div class="form-group">
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+                        <button class="btn btn-success" id="btnSubmit" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
